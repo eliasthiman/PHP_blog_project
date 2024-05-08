@@ -1,0 +1,320 @@
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, monospace;
+    font-size: 100%;
+    font-style: normal;
+    background-image: url(../svg/background.svg);
+    background-attachment: fixed;
+}
+
+.message {
+  color: red;
+  font-weight: bold;
+}
+
+.page-wrapper {
+    padding: 0 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    align-self: center;
+}
+
+
+.myHeader {
+    background-color: white;
+    border-radius: 0.3rem;
+    margin-top: 1rem;
+    max-height: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+
+.main-content{
+    max-width: 80rem;
+    background-color: white;
+    padding: 0 1em;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 0.3rem;
+}
+
+.blog-post{
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 0.3rem;
+}
+
+.sign-date-time{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+#sign, #date{
+    padding: 0.5rem;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+ 
+
+.nav-bar {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.nav-bar li a {
+    color: black;
+}
+
+.nav-bar li a:link, a:visited{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    border-radius: 2rem;
+    
+}
+
+.nav-bar a:hover, a:active, a:visited{
+    background-color:#559bd4;
+    color: white;
+}
+
+  
+.loginForm{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#submitButton, #logoutButton{
+    margin: 1rem;
+    font-size: medium;
+}
+
+#loginNotice{
+    color: green;
+}
+
+.mainPanelButtons{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+/* Create post button */
+#button {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+#button:hover,
+#button:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#button:hover {
+  background-color: #559bd4;
+  color: white;
+} 
+
+#button:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+/* Log in button */
+#login-button {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 1rem;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  #login-button:hover,
+  #login-button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  #login-button:hover {
+    background-color: #6ed455;
+    color: white;
+  } 
+  
+  #login-button:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+ /* Log out button */
+#logout-button {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 1rem;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  #logout-button:hover,
+  #logout-button:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  #logout-button:hover {
+    background-color: #d45555;
+    color: white;
+  } 
+  
+  #logout-button:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+
+
+
+/*.topSection{
+    margin-top: 3rem;
+
+transform: translateY(-1px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+} */
+
+
+
+/*body {
+    background: url(../jpg/bg.jpg) repeat;
+    color: #1e5161;
+    font-size: 125%;
+}
+
+.page-wrapper {
+    margin-left: 200px;
+    width: 600px;
+    text-align: center; 
+}
+
+.page-wrapper h1 {
+    font-style: italic;
+}
+
+.page-wrapper ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+}
+
+Palletes
+
+#89D2DC - ljusgrön
+
+#08605F - mörkgrön
+
+#6564DB - lila
+
+#101D42 - mörkblå
+
+#0D1317 - svart
+
+#d4efee lite bättre färg
+
+
+*/
