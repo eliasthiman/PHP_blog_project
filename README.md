@@ -5,6 +5,6 @@ This is a website built with PHP
 ## Technologies Used
 
 - **PHP**
-- **mySQL**
+- **MySQL**
 
 
